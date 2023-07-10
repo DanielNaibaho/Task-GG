@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify Page</title>
+  <style>
+    /* CSS Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1DB954;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .headerspotify {
+        float: left;
+        font-size: 30px;
+    }
+
+    .img-logo{
+        height: 50px;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    h2 {
+      color: #1DB954;
+      margin-bottom: 10px;
+    }
+
+    
+
+    .song-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .song {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .most-played-songs {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .most-played-song {
+      width: 150px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* CSS Styling */
+    .song-list-playlist {
+      padding: 0;
+      display: block;
+    }
+
+    .song-list-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .song-title {
+      margin-right: 10px;
+    }
+
+    .add-button {
+      background-color: #1DB954;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="headerspotify">Spotify</h1>
+    <img src="logo.png"  class="img-logo">
+  </header>
+
+  <section>
+    <h2 class="allsong">All Songs</h2> <br>
+    <a href="#">See all</a>
+
+    <div class="song-list">
+      <!-- Song cards -->
+      <div class="song">
+        <h3>August</h3>
+        <p>Taylor Swift</p>
+      </div>
+      <div class="song">
+        <h3>Yellow</h3>
+        <p>Coldplay</p>
+      </div>
+      <div class="song">
+        <h3>Fix You</h3>
+        <p>Coldplay</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Your Most Played Songs</h2>
+    <div class="most-played-songs">
+      <!-- Most played song cards -->
+      <div class="most-played-song">
+        <h3>August</h3>
+        <p>Taylor Swift</p>
+      </div>
+      <div class="most-played-song">
+        <h3>Cruel Summer</h3>
+        <p>Taylor Swift</p>
+      </div>
+      <div class="most-played-song">
+        <h3>Wont Go Home</h3>
+        <p>Maroon 5</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <!-- <h1>Playlist</h1> -->
+    <h2>Add Songs to My Playlist</h2>
+    <!-- <form class="playlist-form">
+        
+      <input type="text" placeholder="Song Title or Artist">
+      <input type="submit" value="Add Song">
+    </form> -->
+    <!-- <ul class="song-list">
+        <li class="song-list-item">
+          <span class="song-title">Song 1</span>
+          <button class="add-button">Add</button>
+        </li>
+        <li class="song-list-item">
+          <span class="song-title">Song 2</span>
+          <button class="add-button">Add</button>
+        </li>
+        <li class="song-list-item">
+          <span class="song-title">Song 3</span>
+          <button class="add-button">Add</button>
+        </li>
+      </ul> -->
+  
+      <ul class="song-list-playlist">
+        <!-- <li>Item 1</li> -->
+        <li class="song-list-item">
+            <span class="song-title">Song 1</span>
+            <span class="song-artist">Artist 1</span>
+            <button class="add-button">Add To Playlist</button>
+          </li>
+          <li class="song-list-item">
+            <span class="song-title">Song 1</span>
+            <span class="song-artist">Artist 1</span>
+            <button class="add-button">Add To Playlist</button>
+          </li>
+      </ul>
+    </section>
+</body>
+</html>
